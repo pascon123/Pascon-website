@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>PASCON</title>
 <link rel="icon" type="image/x-icon" href="favicon2.png">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -544,6 +545,8 @@
   /* ── CONTACT ── */
   .contact { background: var(--dark); }
 
+
+
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -552,6 +555,14 @@
   }
 
   .contact-info { display: flex; flex-direction: column; gap: 28px; }
+
+ .newsletter-form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 28px;
+    position: relative;
+    top: -110px; /* Adjust this value to move it up */
+}
 
   .contact-item { display: flex; gap: 16px; align-items: flex-start; }
 
@@ -585,7 +596,13 @@
     font-weight: 300;
   }
 
-  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+.contact-form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
 
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
@@ -669,6 +686,7 @@
 
   .license {
 
+    margin-top: 3%;
     margin-bottom:2%;
 
   }
@@ -795,7 +813,7 @@
         <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="18"/><rect x="14" y="11" width="7" height="10"/></svg>
       </div>
       <h3>Commercial Construction</h3>
-      <p>Commercial construction, planning, managing, and building projects including offices, retail stores, and industrial facilities from start to finish.</p>
+      <p>Commercial construction, planning, managing, and building projects including offices, retail stores, TI work, and industrial facilities from start to finish.</p>
     </div>
 
     <!-- SERVICE 3 -->
@@ -967,12 +985,25 @@
         </div>
         <div>
           <h5>Working Hours</h5>
-          <p>Mon – Fri: 8:00am – 6:00pm</p>
+          <p>Mon – Fri</p>
         </div>
       </div>
     </div>
-    <!--
+
+    <div class = "newsletter-form">
+
+        
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script><iframe src="https://subscribe-forms.beehiiv.com/003c34d5-44b6-4207-b41a-57168278d6a8" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 552px; height: 287px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe>
+
+
+
+    </div>
+
+    
+    
     <div class="contact-form">
+        
+        <!--
       <div class="form-row">
         <input type="text" placeholder="Your Name" />
         <input type="email" placeholder="Email Address" />
@@ -981,8 +1012,11 @@
       <input type="text" placeholder="Subject / Service of Interest" />
       <textarea placeholder="Your message..."></textarea>
       <button type="button" class="btn-primary" style="cursor:pointer; border:none; width:100%;">Send Message</button>
+    -->
     </div>
--->
+
+
+
 
   </div>
 </section>
